@@ -1,0 +1,35 @@
+body{
+	background-color:black;
+}
+	
+.content{
+	text-align:center;
+}
+
+p,h1 {
+  color: white;
+  text-align: center;
+} 
+
+img{
+	max-width:500px;
+	height:500px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+
+div {
+  width: 1200px;
+  height: 120px;
+  background-color: red;
+  position: center;
+  animation: colorchange 4s linear 3s infinite alternate;
+}
+
+@keyframes colorchange {
+  0%   {background-color:red; left:0px; top:0px;}
+  50%  {background-color:blue; right:200px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
