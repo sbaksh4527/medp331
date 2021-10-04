@@ -1,0 +1,37 @@
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title> Fortune Teller </title>
+  </head>
+  <body>
+    <select onchange="color(this.value)">
+      <option value="">Desired Background Color</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="black">Black</option>
+  </select>
+
+    <main>
+    <h1 id="title"> 🥠 Fortune Teller </h1>
+    <section> 
+
+      <p id="random"> Pick a number between 1 and 5:  <input type="number" id="pickNumber" value="0" max="5"><button onclick="getFortune()"> Get My Fortune! </button> </p>
+
+
+      <p> Enter your name: <input type="text" id="userName"></p>
+<br><br>
+      <input type="changecolor" id="inp"/>
+      <button onclick="pressed()">Type in blue, yellow, green, or red then click</button>
+
+    </section>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
