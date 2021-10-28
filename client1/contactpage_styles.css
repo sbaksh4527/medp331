@@ -1,0 +1,108 @@
+body{
+	background-color:black;
+}
+
+
+h1{
+	font-size:70px;
+	text-align:center;
+	color:crimson;
+	font-family:georgia;
+}
+
+h2{
+	font-size:40px;
+	text-align:center;
+	color:white;
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-size:30px;
+  font-family:georgia;
+  /*position:absolute;
+	left:20%;
+	bottom:10%;*/
+}
+
+a {
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+
+	ul{
+		font-size:15px;
+		display:flex;
+		list-style-type:none;
+	}
+	ul li{width:200px;
+	float:center;
+	text-align:center;
+	border:1px solid white;
+	background-color: black;
+	opacity:0.8;
+	font-family:times;
+	padding:7px
+	margin-right:4px;
+	width:100%;
+	}
+
+	ul li a{text-decoration:none; 
+		color:white;}
+
+	.home{background-color:brown;}
+
+	ul li:hover{background-color:brown;}
+
+	.padding{
+    color:white;
+    width:20%;
+    height:100%;
+	padding:20rem !important;/*beginning of free quote code*/
+	left:800px;
+	bottom:250px;
+	}
+
+	.free-quote{
+		background:navy;
+		padding:30px 50px;
+		color: rgba(255,255,255,0.6);
+		font-size:15px;
+		min-width:100%;
+		min-height:100%;
+	}
+	.heading{
+		font-size:40px;
+		text-transform:uppercase;
+		color:#fff;
+	}
+	.free-quote .form-control{
+		border:2px solid rgba(255,255,255,0.5);
+		background:none;
+		color:#fff;
+	}
+	.form-control{
+		height:43px;
+		border-radius:0;
+	}
+	.free-quote .form-control:focus{
+		border:2px solid #fff;
+	}
+	.btn-primary{
+		color:#212529;
+		background-color:#fb8c00;
+		border-color:#f89d13;
+		border:2px solid transparent;
+		text-transform:uppercase;
+		letter-spacing:.2em;
+		border-radius:0;
+	}
+
+	.btn-primary:hover{
+		border:2px solid #fb8c00;
+		background:none !important;
+		color:#fff !important;
+	}
+

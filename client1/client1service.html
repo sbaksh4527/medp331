@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>Service Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+<link rel="stylesheet" type="text/css" href="servicepage_styles.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+	<h1 class="title">R&H Trucking Inc.</h >
+	<ul class="service_menu">
+	<li class="list"><a href="client1website.html">Home</a></li>
+	<li class="list"><a href="client1aboutpage.html">About Us</a></li>
+	<li class="list"><a href="client1contact.html">Contacts</a></li>
+	<li class="home"><a href="client1service.html">Service</a></li>
+</ul>
+	<h2>Services</h2>
+<p>We provide the dump truck services listed below in the 5 boroughs, Long Island and Upstate.<br> We have a fleet of trucks that can carry anything you need and skilled drivers that make<br> it all happen. We offer the services below and every customer is guaranteed satisfaction! </p>
+<ol>
+	<li>1. Pick Up & Disposal</li>
+	<li>2. Demolition Debris</li>
+	<li>3. Aggregates</li>
+	<li>4. Asphault</li>
+	<li>5. On-Site Hauling</li>
+	<li>6. Dirt Hauling</li>
+</ol>
+
+<p>We are available to you seven days a week for any service!<br> Our rates are reasonable and you will get quality work.</p>
+<br><br>
+	<img src="" id="image" style="width:100%; height:auto;">
+<script type="text/javascript">
+	let image = document.getElementById('image');
+	let images = ['dumptruck_03.png','dumptruck_04.png','dumptruck_05.png','dumptruck_06.png']
+		setInterval(function(){
+			let random= Math.floor(Math.random()*4);
+			image.src = images[random];
+		}, 800);
+</script>	
+</div>
+<br><br>
+<div class = "card">
+	<div class = "search">
+		<input type="text" class="search-bar" placeholder="Type in City">
+		<button class = "click">Click Me</button>
+</div>
+
+<div class="weather">
+	<h2 class="city">Weather</h2>
+	<div class="temp">51° Fahrenheit</div>
+	<img src="" alt="" class="icon"></div>
+	<div class="description">Cloudy</div>
+	<div class="humidity">Humidity: 60%</div>
+</div>
+
+
+<div class="weather-container">
+	<img class="icon">
+	<p class="weather"></p>
+	<p class="temp"></p>
+</div>
+
+<div class="padding">
+	<div class="free-quote">
+		<h2 class="heading">Get Free Quotes</h2>
+		<form>
+		<div class="form-group">
+			
+			<input type="text" class="form-control" placeholder="Enter Name" name="">
+		</div>
+		<br>
+		<div class="form-group">
+			
+			<input type="text" class="form-control" placeholder="Enter Email" name="">
+		</div>
+		<br>
+	<div class="form-group">
+			
+			<input type="text" class="form-control" placeholder="Enter Desired Service" name="">
+		</div>
+		<br>
+<div class="form-group">
+			
+			<input type="submit" class="btn-primary" value="Get Quote" name="">
+		</div>
+
+
+</body>
+</html>
+
