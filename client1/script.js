@@ -13,13 +13,14 @@ let weather = {
 
 	showWeather: function(data){
 		const { name } = data;
-		const{ icon, details } = data.weather[0];
-		const{ temperature, humidity } = data.main;
-		console.log(name,icon,details,temperature, humidity);
+		const{ icon, description } = data.weather[0];
+		console.log( data.main );
+		const{ temp, humidity } = data.main;
+		console.log(name,icon,description,temp,humidity);
 		document.querySelector(".city").innerText = "Weather in " + name;
 		document.querySelector(".icon").src = "https://openweathermap.org/img/w/" + icon + ".png";
-		document.querySelector(".details").innerText = details;
-		document.querySelector(".temperature").innerText = temparature + "°";
+		document.querySelector(".details").innerText = description;
+		document.querySelector(".temperature").innerText = temp + "°";
 		document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
 	},
 	search: function() {
@@ -31,9 +32,7 @@ document.querySelector(".search button").addEventListener("click", function(){
 weather.search();
 });
 
-document
-.querySelector(".search-bar")
-.addEventListener("keyup", function(event){
+document.querySelector(".search-bar").addEventListener("keyup", function(event){
 	if(event.key=="Enter"){
 	weather.search();
  }
