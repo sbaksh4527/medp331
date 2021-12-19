@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Collage Assignment</title>
+<style> 
+body{
+    padding: 0;
+    margin: 0;
+}
+img{
+    height:800px;
+    width:900px;
+}
+h1{
+    text-align:center;
+}
+    </style>
+</head>
+<body>
+    <h1>IMAGE COLLAGE ASSIGNMENT</h1>
+<img src = "tiger.jpg" id = "main">
+<script type="text/javascript">
+var myImage = document.getElementById('main');
+var imageArray = ["tiger.jpg", "koala.jpg", "monkey.jpg", "zebra.jpg"];
+var imageIndex = 1;
+
+function changeImage(){
+    myImage.setAttribute("src", imageArray[imageIndex]);
+    imageIndex++;
+    if(imageIndex > 3) {imageIndex = 0;}
+}
+
+</script>
+<button onclick="changeImage()"> NEXT </button>
+</body>
+</html>
