@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
-    <title>Survey Form</title>
+    <title>Democracy Prep Survey Form</title>
 </head>
 <body>
     <div class="container ">
@@ -17,15 +17,15 @@
                 Thank you for taking the time to help us to improve our platform
             </p>
         </header>
-        <form action= "https://formsubmit.co/siddiquebaksh57@gmail.com" method="post" id="survey-form">
-            <input type="hidden" name="_next" value="thankyou.html">
+        <form action= "https://formsubmit.co/siddiquebaksh57@gmail.com" method="POST" id="survey-form">
+            <!--<input type="hidden" name="_next" value="thankyou.html">-->
 
-            <!-- Text section -->
+            <!-- Name section -->
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
             </div>
-            <!-- end of text section -->
+            <!-- end of name section -->
 
             <!-- Type Email section -->
             <div class="form-group">
@@ -41,14 +41,14 @@
             </div>
             <!-- end of Number section -->
 
-            <!-- Type Number section -->
+            <!-- Address section -->
             <div class="form-group">
                 <label for="address">Address <span class="clue">(optional)</span></label>
                 <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
             </div>
-            <!--  end of number section -->
+            <!--  end of address section -->
 
-            <!-- select section -->
+            <!-- Current role section -->
             <div class="form-group">
                 <p id="quest">Which option best describe your current role</p>
                 <select name="role" required id="dropdown" class="formControl">
@@ -59,22 +59,20 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <!-- end of select section -->
+            <!-- end of current role section -->
             
             <div class="wrapper">
-                <header>What Design tool do you use the most? <br></header>
+                <header>Do you prefer In-Person or Virtual Classes? <br></header>
                 <div class="poll-area">
                   <input type="checkbox" name="poll" id="opt-1">
                   <input type="checkbox" name="poll" id="opt-2">
-                  <input type="checkbox" name="poll" id="opt-3">
-                  <input type="checkbox" name="poll" id="opt-4">
                   <label for="opt-1" class="opt-1">
                     <div class="row">
                       <div class="column">
                         <span class="circle"></span>
-                        <span class="text">Photoshop</span>
+                        <span class="text">In-Person Classes</span>
                       </div>
-                      <span class="percent">55%</span>
+                      <span class="percent">40%</span>
                     </div>
                     <div class="progress" id="pstyle1" style='--w:55;'></div>
                   </label>
@@ -82,38 +80,16 @@
                     <div class="row">
                       <div class="column">
                         <span class="circle"></span>
-                        <span class="text">Sketch</span>
+                        <span class="text">Virtual Classes</span>
                       </div>
-                      <span class="percent">20%</span>
+                      <span class="percent">60%</span>
                     </div>
                     <div class="progress" id="pstyle2" style='--w:80;'></div>
-                  </label>
-                  <label for="opt-3" class="opt-3">
-                    <div class="row">
-                      <div class="column">
-                        <span class="circle"></span>
-                        <span class="text">Adobe XD</span>
-                      </div>
-                      <span class="percent">20%</span>
-                    </div>
-                    <div class="progress" id="pstyle3" style='--w:20;'></div>
-                  </label>
-                  <label for="opt-4" class="opt-4">
-                    <div class="row">
-                      <div class="column">
-                        <span class="circle"></span>
-                        <span class="text">Figma</span>
-                      </div>
-                      <span class="percent">96%</span>
-                    </div>
-                    <div class="progress" id="pstyle4" style='--w:96;'></div>
                   </label>
                 </div>
               </div>
 
-
-
-            <!-- Textarea section -->
+            <!-- Feedback section -->
             <div class="form-group">
                 <p id="quest">Give us your feedback</p>
                 <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
@@ -124,56 +100,6 @@
         </form>
     </div>
 
-
- <!--- <div class="wrapper">
-    <header>What Design tool do you use the most? <br></header>
-    <div class="poll-area">
-      <input type="checkbox" name="poll" id="opt-1">
-      <input type="checkbox" name="poll" id="opt-2">
-      <input type="checkbox" name="poll" id="opt-3">
-      <input type="checkbox" name="poll" id="opt-4">
-      <label for="opt-1" class="opt-1">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">Photoshop</span>
-          </div>
-          <span class="percent">55%</span>
-        </div>
-        <div class="progress" id="pstyle1" style='--w:55;'></div>
-      </label>
-      <label for="opt-2" class="opt-2">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">Sketch</span>
-          </div>
-          <span class="percent">20%</span>
-        </div>
-        <div class="progress" id="pstyle2" style='--w:80;'></div>
-      </label>
-      <label for="opt-3" class="opt-3">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">Adobe XD</span>
-          </div>
-          <span class="percent">20%</span>
-        </div>
-        <div class="progress" id="pstyle3" style='--w:20;'></div>
-      </label>
-      <label for="opt-4" class="opt-4">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">Figma</span>
-          </div>
-          <span class="percent">96%</span>
-        </div>
-        <div class="progress" id="pstyle4" style='--w:96;'></div>
-      </label>
-    </div>
-  </div>-->
   <script src="script.js"></script>
 </body>
 </html>
