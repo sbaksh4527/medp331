@@ -1,0 +1,152 @@
+	body{
+		font-family:georgia;
+		background-color:burlywood;
+	}
+	h1{
+		color:crimson;
+		text-align:left;
+		font-size:65px;
+	}
+	h2{
+		text-align:left;
+		font-size:50px;
+		color:black;
+		font-family:georgia;
+	}  
+	img{
+		display:block;
+		width:800px;
+		margin: 0 auto;
+		transition: 0.3s;
+	}
+	p{
+		text-align:left;
+		font-size:27px;
+		color:black;
+		font-family:georgia;
+	}
+
+	ul{
+		display:flex;
+		float:right;
+		list-style-type:none;
+		overflow:hidden;
+		width:50%;
+	}
+	ul li{
+	float:right;
+	text-align:center;
+	border:1px solid white;
+	background-color: black;
+	opacity:0.8;
+	font-family:georgia;
+	padding:7px
+	margin-right:2px;
+	width:50%;
+	font-size:20px;
+	}
+
+	ul li a{text-decoration:none; 
+		color:white;}
+
+	.home{background-color:brown;}
+
+	ul li:hover{background-color:brown;}
+
+	ol{
+		text-align:center;
+		color:black;
+		font-family:georgia;
+		font-size:22px;
+		list-style-type:none;
+		text-align:left;
+	}
+
+	.padding{
+ 	position:absolute;
+    color:white;
+    width:20%;
+    height:40%;
+	padding:20rem !important;
+	left:820px;
+	bottom:30px;
+	opacity:80%;
+	}
+
+	.free-quote{
+		background:navy;
+		padding:30px 50px;
+		color: rgba(255,255,255,0.6);
+		font-size:15px;
+		min-width:100%;
+		min-height:100%;
+	}
+	.heading{
+		font-size:40px;
+		text-transform:uppercase;
+		color:#fff;
+	}
+	.free-quote .form-control{
+		border:2px solid rgba(255,255,255,0.5);
+		background:none;
+		color:#fff;
+	}
+	.form-control{
+		height:43px;
+		border-radius:0;
+	}
+	.free-quote .form-control:focus{
+		border:2px solid #fff;
+	}
+	.btn-primary{
+		color:#212529;
+		background-color:#fb8c00;
+		border-color:#f89d13;
+		border:2px solid transparent;
+		text-transform:uppercase;
+		letter-spacing:.2em;
+		border-radius:0;
+	}
+
+	.btn-primary:hover{
+		border:2px solid #fb8c00;
+		background:none !important;
+		color:#fff !important;
+	}
+
+	.weather-container {
+		text-align:center;
+	}
+
+	.weather{
+		text-align:center;
+		font-size: 30px;
+		margin:0;
+	}
+
+	.temp{
+		text-align:center;
+		font-size:70px;
+		margin:0;
+		font-weight: bold;
+	}
+
+	.card{
+		text-align:left;
+		background:dodgerblue;
+		color:white;
+		padding: 2em;
+		border-radius;
+		width:100%;
+		margin:1em;
+	}
+
+	button:hover{
+		background:aquamarine;
+	}
+
+@media screen and (max-width: 768px) {
+    body { width:100%; margin:0; 
+    	border:none;
+    }
+}
